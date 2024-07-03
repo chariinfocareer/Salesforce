@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>Payments</name>
+        <label>Payments</label>
+        <locationX>321</locationX>
+        <locationY>154</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Advance_Paid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Advance_Payment__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Advance_Date_Update</targetReference>
+            </connector>
+            <label>Advance Paid</label>
+        </rules>
+        <rules>
+            <name>Final_Payment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Final_Payment__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Final_Paid_Date</targetReference>
+            </connector>
+            <label>Final Payment</label>
+        </rules>
+    </decisions>
+    <description>Advance Paid Date ,Final Paid Date And Amount Recieeved Updating</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>TotalPaidAmount</name>
+        <dataType>Currency</dataType>
+        <expression>IF( ISBLANK({!$Record.Advance_Payment__c}), {!$Record.Final_Payment__c}, IF(       ISBLANK({!$Record.Final_Payment__c}),
+        {!$Record.Advance_Payment__c}, {!$Record.Advance_Payment__c}+{!$Record.Final_Payment__c}  )
+)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Update Amount Received On API {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Amount Received On API</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Advance_Date_Update</name>
+        <label>Advance Date Update</label>
+        <locationX>185</locationX>
+        <locationY>331</locationY>
+        <connector>
+            <targetReference>AmountRecive</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Advance_Paid_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>AmountRecive</name>
+        <label>AmountReceived</label>
+        <locationX>304</locationX>
+        <locationY>500</locationY>
+        <inputAssignments>
+            <field>Amount_Received__c</field>
+            <value>
+                <elementReference>TotalPaidAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Final_Paid_Date</name>
+        <label>Final Paid Date</label>
+        <locationX>379</locationX>
+        <locationY>329</locationY>
+        <connector>
+            <targetReference>AmountRecive</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Final_Paid_Date__c</field>
+            <value>
+                <elementReference>$Flow.CurrentDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>545</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Payments</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Advance_Payment__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Final_Payment__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account_Payment_Information__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>
