@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMI_Material_Key_Email_Validation_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISBLANK( PMI_Material_Key__c ) , !ISBLANK( Date_of_Purchase__c ) )</errorConditionFormula>
+    <errorDisplayField>PMI_Material_Key__c</errorDisplayField>
+    <errorMessage>Fill the PMI Material Key Field</errorMessage>
+</ValidationRule>

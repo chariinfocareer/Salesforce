@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Status__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If status is Yet to Receive - the participant is yet to make a decision on the payment.  If status is Partially Received, the Next Payment Date is mandatory.  If status is Fully Received, Next Payment Date is to be left blank.</inlineHelpText>
+    <label>Payment Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yet To Receive</fullName>
+                <default>true</default>
+                <label>Yet To Receive</label>
+            </value>
+            <value>
+                <fullName>Partially Received</fullName>
+                <default>false</default>
+                <label>Partially Received</label>
+            </value>
+            <value>
+                <fullName>Fully Received</fullName>
+                <default>false</default>
+                <label>Fully Received</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enroll_To_Training_Read_Only</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( PRIORVALUE( Enroll_for_Training__c ) = True, ISCHANGED( Enroll_for_Training__c ))</errorConditionFormula>
+    <errorDisplayField>Enroll_for_Training__c</errorDisplayField>
+    <errorMessage>OOPS! The Enroll to Training box cannot be unchecked once it is checked</errorMessage>
+</ValidationRule>

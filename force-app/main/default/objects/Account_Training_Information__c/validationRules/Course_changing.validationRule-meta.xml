@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Course_changing</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(  Course__c ), !ISPICKVAL( Account_Payment_Information__r.Payment_Status__c , &apos;Yet To Receive&apos;) ,( !ISBLANK( Account_Payment_Information__c ) ) )</errorConditionFormula>
+    <errorDisplayField>Course__c</errorDisplayField>
+    <errorMessage>Course cannot be changed for this ATI.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_Partial_Amount_Received</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Payment_Status__c , &apos;Partially Received&apos;) , ISBLANK( Next_Payment_Date__c ) )</errorConditionFormula>
+    <errorDisplayField>Payment_Status__c</errorDisplayField>
+    <errorMessage>If status is Partially Received, then the Next Payment Status field is mandatory i.e. it cannot be empty.</errorMessage>
+</ValidationRule>

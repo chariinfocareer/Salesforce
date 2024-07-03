@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Taxable_Amount__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Opportunity&apos;s final amount, will be auto-filled. In case this needs to be edited, please do so in the corresponding Opportunity record.</inlineHelpText>
+    <label>Taxable Amount</label>
+    <precision>14</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

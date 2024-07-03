@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Course_Compact_layout</fullName>
+    <fields>Name</fields>
+    <fields>Course_Code__c</fields>
+    <fields>Course_Amount_In_INR__c</fields>
+    <fields>Course_Amount_In_USD__c</fields>
+    <fields>Exam_Fees_in_INR__c</fields>
+    <label>Course Compact layout</label>
+</CompactLayout>

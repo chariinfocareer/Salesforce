@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Status_Cannot_Reversed</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND( ISPICKVAL( PRIORVALUE( Payment_Status__c ) , &quot;Partially Received&quot;), ISPICKVAL( Payment_Status__c , &quot;Yet To Receive&quot;) ),AND( ISPICKVAL( PRIORVALUE( Payment_Status__c ) , &quot;Fully Received&quot;), OR((ISPICKVAL( Payment_Status__c , &quot;Yet To Receive&quot;)),(ISPICKVAL( Payment_Status__c , &quot;Partially Received&quot;)) ) ))</errorConditionFormula>
+    <errorDisplayField>Payment_Status__c</errorDisplayField>
+    <errorMessage>Payment Status Field Error :
+If Payment Status is Fully Received, this field cannot be edited further.</errorMessage>
+</ValidationRule>

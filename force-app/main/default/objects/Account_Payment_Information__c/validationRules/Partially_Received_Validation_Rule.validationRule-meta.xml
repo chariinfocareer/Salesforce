@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partially_Received_Validation_Rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND( ISPICKVAL( PRIORVALUE( Payment_Status__c ) , &quot;Fully Received&quot;),ISPICKVAL( Payment_Status__c , &quot;Partially Received&quot;) ),AND( ISPICKVAL( Payment_Status__c , &apos;Partially Received&apos;) , Pending_Amount__c  &lt;=  0),AND( ISPICKVAL( Payment_Status__c , &apos;Partially Received&apos;) , ISBLANK( Next_Payment_Date__c ) ))</errorConditionFormula>
+    <errorDisplayField>Payment_Status__c</errorDisplayField>
+    <errorMessage>This error could be due to one or more of the following:
+If status is Partially Received, 
+1.then the Next Payment Status field is mandatory i.e. it cannot be  empty.
+2.then the Pending Amount field cannot be empty or zero.</errorMessage>
+</ValidationRule>
