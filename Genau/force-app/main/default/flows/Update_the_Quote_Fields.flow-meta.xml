@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <interviewLabel>Update the Quote Fields {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update the Quote Fields</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_the_fields_value</name>
+        <label>Update the fields value</label>
+        <locationX>499</locationX>
+        <locationY>371</locationY>
+        <inputAssignments>
+            <field>Terms_and_Conditions__c</field>
+            <value>
+                <elementReference>Storethedefaultvalue</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>373</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Update_the_fields_value</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Terms_and_Conditions__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Quote</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Storethedefaultvalue</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;1 Incoterms : FOR_&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;2 Taxes/Duties : As Applicable at the time of Billing.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;3 Payment : 60 days from date of invoice date&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;4 Supply Condition : Forged +machining&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;5 Development : 100% in advance (Non-Refundable) along with the P.O&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;6 Raw Materials : SAE&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;7 Quotation : 30 days from Offer date&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;8 Mode of : By sea /road&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;9 Raw Material Price : RM (HR bar) Landed price from steel mill is considered as in the above table, any fluctuation in raw material price need to be compensated by you on quarterly basis&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;10 Samples : 08 weeks from the receipt of PO &amp;amp; Development Cost.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;11 Bulk production : 12 weeks after approval of samples.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;12 Packing : Sae worthy Packing&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 10px; font-family: sans-serif;&quot;&gt;13 During regular supplies, we need 3 months firm &amp;amp; 2 months tentative schedule to plan RM in advance to meet your requirement without any interruptions.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 11px; font-family: sans-serif;&quot;&gt;Thanks &amp;amp; Regards,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;img src=&quot;https://enterprise-power-357--geclient3.sandbox.file.force.com/sfc/servlet.shepherd/version/download/068Ip00000053Yf?asPdf=false&amp;amp;operationContext=CHATTER&quot; alt=&quot;Capture 4.PNG&quot;&gt;&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

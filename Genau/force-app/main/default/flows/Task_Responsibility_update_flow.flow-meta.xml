@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <name>Assign_Marketing</name>
+        <label>Assign Marketing</label>
+        <locationX>176</locationX>
+        <locationY>3887</locationY>
+        <assignmentItems>
+            <assignToReference>MarketingText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>RFQ_recieve_from_Marketing</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Process_Engineer</name>
+        <label>Assign - Process Engineer</label>
+        <locationX>176</locationX>
+        <locationY>4319</locationY>
+        <assignmentItems>
+            <assignToReference>ProcessEngineerText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Engineering_Drawings_Process_drawings_Stage_drawings</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Process_Engineer_Marketing</name>
+        <label>Assign - Process Engineer &amp; Marketing</label>
+        <locationX>176</locationX>
+        <locationY>3455</locationY>
+        <assignmentItems>
+            <assignToReference>ProcessEngineerMarketingText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Packaging_Data_Sheet</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Process_Engineer_Quality</name>
+        <label>Assign - Process Engineer &amp; Quality</label>
+        <locationX>176</locationX>
+        <locationY>2375</locationY>
+        <assignmentItems>
+            <assignToReference>ProcessEngineerQualityText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>New_Gauges_Fixtures_requirements_established</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Project_Leader</name>
+        <label>Assign - Project Leader</label>
+        <locationX>176</locationX>
+        <locationY>5939</locationY>
+        <assignmentItems>
+            <assignToReference>ProjectLeaderText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Raw_Material_Plan_and_Order</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Project_Leader_Marketing</name>
+        <label>Assign - Project Leader Marketing</label>
+        <locationX>176</locationX>
+        <locationY>3671</locationY>
+        <assignmentItems>
+            <assignToReference>ProjectLeaderMarketingText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Initial_Production_Shipment</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Quality</name>
+        <label>Assign - Quality</label>
+        <locationX>176</locationX>
+        <locationY>5615</locationY>
+        <assignmentItems>
+            <assignToReference>QualityText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Sample_Inspection</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Task_Project_Leader_and_CFT</name>
+        <label>Assign Task - Project Leader and CFT</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <assignmentItems>
+            <assignToReference>ProjectLeaderCFTText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Technical_Discussion_With_Customer</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Technical</name>
+        <label>Assign - Technical</label>
+        <locationX>176</locationX>
+        <locationY>5399</locationY>
+        <assignmentItems>
+            <assignToReference>TechnicalText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>RFQ_Feasiblity_date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_the_Process_Eng_1</name>
+        <label>Assign the - Process Eng 1</label>
+        <locationX>176</locationX>
+        <locationY>5183</locationY>
+        <assignmentItems>
+            <assignToReference>ProcessEngText1</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Sample_Trails_Forging_M_C_H_T_etc</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_to_Process_Engineer_Quality</name>
+        <label>Assign to Process Engineer &amp; CFT</label>
+        <locationX>176</locationX>
+        <locationY>1727</locationY>
+        <assignmentItems>
+            <assignToReference>ProcessEngineerAndCFTTextVar</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Special_characteristics_list_SC_CC</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Tool_Room</name>
+        <label>Assign - Tool Room</label>
+        <locationX>176</locationX>
+        <locationY>6263</locationY>
+        <assignmentItems>
+            <assignToReference>ToolRoomText</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Responsibility__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <formulas>
+        <name>AssignProjectLeaderMarketing</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProjectLeaderMarketingText}),
+    &quot;Project Leader ; Marketing;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Project Leader&quot;)),
+        {!ProjectLeaderMarketingText} &amp; &quot;;Project Leader&quot;,
+        {!ProjectLeaderMarketingText}
+    ) &amp;
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Marketing&quot;)),
+        {!ProjectLeaderMarketingText} &amp; &quot;;Marketing&quot;,
+        {!ProjectLeaderMarketingText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>MarketingFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!MarketingText}),
+    &quot;Marketing;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Marketing&quot;)),
+        {!MarketingText} &amp; &quot;;Marketing&quot;,
+        {!MarketingText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProcessEngFormula1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProcessEngText1}),
+    &quot;Process Engineer;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Process Engineer&quot;)),
+        {!ProcessEngText1} &amp; &quot;;Process Engineer&quot;,
+        {!ProcessEngText1}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProcessEngineerAndQualityFORMULA</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProcessEngineerQualityText}),
+    &quot;Process Engineer;Quality;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Process Engineer&quot;)),
+        {!ProcessEngineerAndCFTTextVar} &amp; &quot;;Process Engineer&quot;,
+        {!ProcessEngineerAndCFTTextVar}
+    ) &amp;
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Quality&quot;)),
+        {!ProcessEngineerQualityText} &amp; &quot;;Quality&quot;,
+        {!ProcessEngineerAndCFTTextVar}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProcessEngineerCFTformula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProcessEngineerAndCFTTextVar}),
+    &quot;Process Engineer;CFT;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Process Engineer&quot;)),
+        {!ProcessEngineerAndCFTTextVar} &amp; &quot;;Process Engineer&quot;,
+        {!ProcessEngineerAndCFTTextVar}
+    ) &amp;
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;CFT&quot;)),
+        {!ProcessEngineerAndCFTTextVar} &amp; &quot;;CFT&quot;,
+        {!ProcessEngineerAndCFTTextVar}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProcessEngineerFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProcessEngineerText}),
+    &quot;Process Engineer;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Process Engineer&quot;)),
+        {!ProcessEngineerText} &amp; &quot;;Process Engineer&quot;,
+        {!ProcessEngineerText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProcessEngineerMarketingFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProcessEngineerMarketingText}),
+    &quot;Process Engineer;Marketing;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Process Engineer&quot;)),
+        {!ProcessEngineerMarketingText} &amp; &quot;;Process Engineer&quot;,
+        {!ProcessEngineerMarketingText}
+    ) &amp;
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Marketing&quot;)),
+        {!ProcessEngineerMarketingText} &amp; &quot;;Marketing&quot;,
+        {!ProcessEngineerMarketingText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProjectLeaderCFTformula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProjectLeaderCFTText}),
+    &quot;Project Leader ; CFT;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Project Leader&quot;)),
+        {!ProjectLeaderCFTText} &amp; &quot;;Project Leader&quot;,
+        {!ProjectLeaderCFTText}
+    ) &amp;
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;CFT&quot;)),
+        {!ProjectLeaderCFTText} &amp; &quot;;CFT&quot;,
+        {!ProjectLeaderCFTText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ProjectLeaderFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ProjectLeaderText}),
+    &quot;Project Leader;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Project Leader&quot;)),
+        {!ProjectLeaderText} &amp; &quot;;Project Leader&quot;,
+        {!ProjectLeaderText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>QualityFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!QualityText}),
+    &quot;Quality;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Quality&quot;)),
+        {!QualityText} &amp; &quot;;Quality&quot;,
+        {!QualityText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>TechnicalFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!TechnicalText}),
+    &quot;Technical;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Technical&quot;)),
+        {!TechnicalText} &amp; &quot;;Technical&quot;,
+        {!TechnicalText}
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ToolRoomFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!ToolRoomText}),
+    &quot;Tool Room;&quot;,
+    IF(
+        NOT(INCLUDES({!$Record.Responsibility__c}, &quot;Tool Room&quot;)),
+        {!ToolRoomText} &amp; &quot;;Tool Room&quot;,
+        {!ToolRoomText}
+    )
+)</expression>
+    </formulas>
+    <interviewLabel>Task Responsibility update flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task Responsibility update flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Capability_Evaluation_Process_Machine</name>
+        <label>Capability Evaluation (Process / Machine)</label>
+        <locationX>176</locationX>
+        <locationY>3131</locationY>
+        <connector>
+            <targetReference>Run_Rate</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Capability Evaluation (Process / Machine)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Conduct_Lessons_Learned</name>
+        <label>Conduct Lessons Learned</label>
+        <locationX>176</locationX>
+        <locationY>1511</locationY>
+        <connector>
+            <targetReference>Project_Transfer</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Conduct Lessons Learned</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Engineering_Drawings_Process_drawings_Stage_drawings</name>
+        <label>Engineering Drawings (Process drawings,Stage drawings)</label>
+        <locationX>176</locationX>
+        <locationY>4427</locationY>
+        <connector>
+            <targetReference>Resource_Planning_Test_Equipment_and_Other_Facilities_req</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Engineering Drawings (Process drawings,Stage drawings)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Feasibility_Details_on_Mfg_and_Agreement_of_Inspection</name>
+        <label>Feasibility Details on Mfg and Agreement of Inspection</label>
+        <locationX>176</locationX>
+        <locationY>863</locationY>
+        <connector>
+            <targetReference>Team_Feasiblity_Commitment</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Feasibility Details on Mfg and Agreement of Inspection</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Formation_of_Team_Define_Scope</name>
+        <label>Formation of Team &amp; Define Scope</label>
+        <locationX>176</locationX>
+        <locationY>755</locationY>
+        <connector>
+            <targetReference>Feasibility_Details_on_Mfg_and_Agreement_of_Inspection</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Formation of Team &amp; Define Scope</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Full_Production_Date</name>
+        <label>Full Production Date</label>
+        <locationX>176</locationX>
+        <locationY>1295</locationY>
+        <connector>
+            <targetReference>Project_Transfer_sign_off_sheet_Project_hand_over_to_production</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Full Production Date</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Initial_Production_Shipment</name>
+        <label>Initial Production Shipment</label>
+        <locationX>176</locationX>
+        <locationY>3779</locationY>
+        <connector>
+            <targetReference>Assign_Marketing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Initial Production Shipment</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>AssignProjectLeaderMarketing</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Kick_Off_Meeting</name>
+        <label>Kick - Off Meeting</label>
+        <locationX>176</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Project_Organization_Chart</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Kick - Off Meeting</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Lesson_Learnt_Past_defect_history</name>
+        <label>Lesson Learnt &amp; Past defect history</label>
+        <locationX>176</locationX>
+        <locationY>1079</locationY>
+        <connector>
+            <targetReference>Open_Point_List_OPL_Discussion</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lesson Learnt &amp; Past defect history</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Measurement_Systems_Analysis_MSA_Evaluation</name>
+        <label>Measurement Systems Analysis (MSA) Evaluation</label>
+        <locationX>176</locationX>
+        <locationY>3023</locationY>
+        <connector>
+            <targetReference>Capability_Evaluation_Process_Machine</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Measurement Systems Analysis (MSA) Evaluation</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Measurement_Systems_Analysis_MSA_Plan</name>
+        <label>Measurement Systems Analysis (MSA) Plan</label>
+        <locationX>176</locationX>
+        <locationY>2591</locationY>
+        <connector>
+            <targetReference>Preliminary_Capability_Study_Plan_Machine_Process</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Measurement Systems Analysis (MSA) Plan</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>New_Gauges_Fixtures_requirements_established</name>
+        <label>New Gauges / Fixtures requirements  established</label>
+        <locationX>176</locationX>
+        <locationY>2483</locationY>
+        <connector>
+            <targetReference>Measurement_Systems_Analysis_MSA_Plan</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>New Gauges / Fixtures requirements established</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>New_Gauges_Fixtures_requirements_procured</name>
+        <label>New Gauges / Fixtures requirements procured</label>
+        <locationX>176</locationX>
+        <locationY>2807</locationY>
+        <connector>
+            <targetReference>Production_Trail_Run_PTR_OR_Pilot_Lot_Run</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>New Gauges / Fixtures requirements procured</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Open_Point_List_OPL_Discussion</name>
+        <label>Open Point List (OPL) Discussion</label>
+        <locationX>176</locationX>
+        <locationY>1187</locationY>
+        <connector>
+            <targetReference>Full_Production_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Open Point List (OPL) Discussion</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Packaging_Data_Sheet</name>
+        <label>Packaging Data Sheet</label>
+        <locationX>176</locationX>
+        <locationY>3563</locationY>
+        <connector>
+            <targetReference>Assign_Project_Leader_Marketing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Packaging Data Sheet</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerMarketingFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PFMEA</name>
+        <label>PFMEA</label>
+        <locationX>176</locationX>
+        <locationY>2051</locationY>
+        <connector>
+            <targetReference>Pre_Launch_Control_Plan</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PFMEA</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>PPAP_Submission_and_Approval</name>
+        <label>PPAP Submission and Approval</label>
+        <locationX>176</locationX>
+        <locationY>3347</locationY>
+        <connector>
+            <targetReference>Assign_Process_Engineer_Marketing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PPAP Submission and Approval</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Pre_Launch_Control_Plan</name>
+        <label>Pre-Launch Control Plan</label>
+        <locationX>176</locationX>
+        <locationY>2159</locationY>
+        <connector>
+            <targetReference>Production_Control_Plan</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Pre-Launch Control Plan</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Preliminary_Capability_Study_Plan_Machine_Process</name>
+        <label>Preliminary Capability Study Plan( Machine / Process)</label>
+        <locationX>176</locationX>
+        <locationY>2699</locationY>
+        <connector>
+            <targetReference>New_Gauges_Fixtures_requirements_procured</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Preliminary Capability Study Plan( Machine / Process)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Preparation_of_Development_Plan_Micro_Plan</name>
+        <label>Preparation of Development Plan (Micro Plan)</label>
+        <locationX>176</locationX>
+        <locationY>5075</locationY>
+        <connector>
+            <targetReference>Assign_the_Process_Eng_1</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Preparation of Development Plan (Micro Plan)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Process_Audit</name>
+        <label>Process Audit</label>
+        <locationX>176</locationX>
+        <locationY>5831</locationY>
+        <connector>
+            <targetReference>Assign_Project_Leader</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Process Audit</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>QualityFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Process_Flow_Diagram_PFD</name>
+        <label>Process Flow Diagram (PFD)</label>
+        <locationX>176</locationX>
+        <locationY>1943</locationY>
+        <connector>
+            <targetReference>PFMEA</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Process Flow Diagram (PFD)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Product_release_note_receive_from_Marketing</name>
+        <label>Product release note receive from Marketing</label>
+        <locationX>176</locationX>
+        <locationY>4103</locationY>
+        <connector>
+            <targetReference>Production_Ramp_Up_plan</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Product release note receive from Marketing</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>MarketingFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Production_Control_Plan</name>
+        <label>Production  Control Plan</label>
+        <locationX>176</locationX>
+        <locationY>2267</locationY>
+        <connector>
+            <targetReference>Assign_Process_Engineer_Quality</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Production Control Plan</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Production_Ramp_Up_plan</name>
+        <label>Production Ramp-Up plan</label>
+        <locationX>176</locationX>
+        <locationY>4211</locationY>
+        <connector>
+            <targetReference>Assign_Process_Engineer</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Production Ramp-Up plan</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>MarketingFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Production_Trail_Run_PTR_OR_Pilot_Lot_Run</name>
+        <label>Production Trail Run (PTR) OR Pilot-Lot Run</label>
+        <locationX>176</locationX>
+        <locationY>2915</locationY>
+        <connector>
+            <targetReference>Measurement_Systems_Analysis_MSA_Evaluation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Production Trail Run (PTR) OR Pilot-Lot Run</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Project_Organization_Chart</name>
+        <label>Project Organization Chart</label>
+        <locationX>176</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Formation_of_Team_Define_Scope</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Project Organization Chart</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Project_Transfer</name>
+        <label>Project Transfer</label>
+        <locationX>176</locationX>
+        <locationY>1619</locationY>
+        <connector>
+            <targetReference>Assign_to_Process_Engineer_Quality</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Project Transfer</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Project_Transfer_sign_off_sheet_Project_hand_over_to_production</name>
+        <label>Project Transfer sign-off sheet Project hand over to production)</label>
+        <locationX>176</locationX>
+        <locationY>1403</locationY>
+        <connector>
+            <targetReference>Conduct_Lessons_Learned</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Project Transfer sign-off sheet (Project hand over to production)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Raw_Material_Incoming</name>
+        <label>Raw Material Incoming</label>
+        <locationX>176</locationX>
+        <locationY>4859</locationY>
+        <connector>
+            <targetReference>Sample_Submission</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Raw Material Incoming</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Raw_Material_Plan_and_Order</name>
+        <label>Raw Material Plan and Order</label>
+        <locationX>176</locationX>
+        <locationY>6047</locationY>
+        <connector>
+            <targetReference>Tool_Manufacturing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Raw Material Plan and Order</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Resource_Planning_Test_Equipment_and_Other_Facilities_req</name>
+        <label>Resource Planning  (Test Equipment and Other Facilities req. )</label>
+        <locationX>176</locationX>
+        <locationY>4535</locationY>
+        <connector>
+            <targetReference>Work_Instructions_and_SOP_s</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Resource Planning  (Test Equipment and Other Facilities req.)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>RFQ_Feasiblity_date</name>
+        <label>RFQ Feasiblity date</label>
+        <locationX>176</locationX>
+        <locationY>5507</locationY>
+        <connector>
+            <targetReference>Assign_Quality</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>RFQ Feasiblity date</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>TechnicalFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>RFQ_recieve_from_Marketing</name>
+        <label>RFQ recieve from Marketing</label>
+        <locationX>176</locationX>
+        <locationY>3995</locationY>
+        <connector>
+            <targetReference>Product_release_note_receive_from_Marketing</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>RFQ recieve from Marketing</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>MarketingFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Run_Rate</name>
+        <label>Run @ Rate</label>
+        <locationX>176</locationX>
+        <locationY>3239</locationY>
+        <connector>
+            <targetReference>PPAP_Submission_and_Approval</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Run @ Rate</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerAndQualityFORMULA</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Sample_Inspection</name>
+        <label>Sample Inspection</label>
+        <locationX>176</locationX>
+        <locationY>5723</locationY>
+        <connector>
+            <targetReference>Process_Audit</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sample Inspection</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>QualityFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Sample_Submission</name>
+        <label>Sample Submission</label>
+        <locationX>176</locationX>
+        <locationY>4967</locationY>
+        <connector>
+            <targetReference>Preparation_of_Development_Plan_Micro_Plan</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sample Submission</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Sample_Trails_Forging_M_C_H_T_etc</name>
+        <label>Sample Trails (Forging,M/C,H/T etc..)</label>
+        <locationX>176</locationX>
+        <locationY>5291</locationY>
+        <connector>
+            <targetReference>Assign_Technical</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Sample Trails (Forging,M/C,H/T etc..)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngFormula1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Special_characteristics_list_SC_CC</name>
+        <label>Special characteristics list  (SC &amp; CC)</label>
+        <locationX>176</locationX>
+        <locationY>1835</locationY>
+        <connector>
+            <targetReference>Process_Flow_Diagram_PFD</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Special characteristics list (SC &amp; CC)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Team_Feasiblity_Commitment</name>
+        <label>Team Feasiblity Commitment</label>
+        <locationX>176</locationX>
+        <locationY>971</locationY>
+        <connector>
+            <targetReference>Lesson_Learnt_Past_defect_history</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Team Feasiblity Commitment</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Technical_Discussion_With_Customer</name>
+        <label>Technical Discussion With Customer</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Kick_Off_Meeting</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Technical Discussion With Customer</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProjectLeaderCFTformula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Tool_Design_Drawings_Release_BOM</name>
+        <label>Tool Design / Drawings (Release BOM)</label>
+        <locationX>176</locationX>
+        <locationY>4751</locationY>
+        <connector>
+            <targetReference>Raw_Material_Incoming</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Tool Design / Drawings (Release BOM)</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Tool_Manufacturing</name>
+        <label>Tool Manufacturing</label>
+        <locationX>176</locationX>
+        <locationY>6155</locationY>
+        <connector>
+            <targetReference>Assign_Tool_Room</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Tool Manufacturing</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ToolRoomFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Work_Instructions_and_SOP_s</name>
+        <label>Work Instructions and SOP&apos;s</label>
+        <locationX>176</locationX>
+        <locationY>4643</locationY>
+        <connector>
+            <targetReference>Tool_Design_Drawings_Release_BOM</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Work Instructions and SOP&apos;s</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Responsibility__c</field>
+            <value>
+                <elementReference>ProcessEngineerFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Task_Project_Leader_and_CFT</targetReference>
+        </connector>
+        <object>inov8__PMT_Task__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>MarketingText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProcessEngineerAndCFTTextVar</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProcessEngineerMarketingText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProcessEngineerQualityText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProcessEngineerText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProcessEngText1</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProjectLeaderCFTText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProjectLeaderMarketingText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ProjectLeaderText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>QualityText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>TechnicalText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ToolRoomText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
